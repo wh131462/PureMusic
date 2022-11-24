@@ -1,0 +1,109 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"transparentTitle": "always"
+			}
+		}, {
+			"path": "pages/main/main",
+			"style": {
+				"enablePullDownRefresh": true
+				//             "navigationBarTitleText": "音乐",
+				// "navigationBarBackgroundColor":"rgba(0,0,0,0)",
+				// "app-plus":{
+				// 	"titleNView":{
+				// 		"type":"float",
+				// 		"titleText":"音乐",
+				// 		"titleColor":"#ffffff"
+				// 	}
+				// }
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"enablePullDownRefresh": false
+				//       "navigationBarTitleText": "我的",
+				// "navigationBarBackgroundColor":"rgba(0,0,0,0)",
+				// "app-plus":{
+				// 	"titleNView":{
+				// 		"type":"float",
+				// 		"titleText":"我的",
+				// 		"titleColor":"#ffffff"
+				// 	}
+				// }
+			}
+		}
+	    ,{
+            "path" : "pages/setback/setback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#b0b0b0",
+		"selectedColor": "#00104a",
+		"backgroundColor": "rgba(255,255,255,0.5)", // "",
+		"height": "50rpx",
+		"list": [{
+			"pagePath": "pages/main/main",
+			"text": "音乐",
+			"iconPath": "static/Icon/musicIcon_black.png",
+			"selectedIconPath": "static/Icon/musicIcon_black.png"
+		}, {
+			"pagePath": "pages/my/my",
+			"text": "我的",
+			"iconPath": "static/Icon/my_black.png",
+			"selectedIconPath": "static/Icon/my_black.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff",
+		"onReachBottomDistance": 15,
+		"navigationStyle": "custom",
+		"app-plus": {
+			"titleNView": false,
+			"pullToRefresh": {
+				"support": true,
+				"color": "#838383", //小圈圈的颜色
+				"style": "circle" 
+			}
+		}
+	},
+	"requiredBackgroundModes":["audio","backgroundAudioManager"]
+}
